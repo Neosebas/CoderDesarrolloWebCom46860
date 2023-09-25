@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root{
     --primario: #ffffff;
     --secundario: #000000;
@@ -26,18 +27,21 @@ h1{
     background-repeat: no-repeat;
     /* position: absolute; */
 }
+
 h2{
     font-family: var(--fuente-heading);
     color: var(--secundario);
     font-size: 2.5625rem;
     text-transform: uppercase;
 }
+
 h3 {
     font-family: var(--fuente-heading);
     color: var(--acento);
     font-size:  1.5625rem;
     text-transform: uppercase;
 }
+
 p {
     font-family: var(--fuente-principal);
     font-size: 1.3125rem;
@@ -45,6 +49,7 @@ p {
     line-height: 2rem; 
     padding: 1rem 2rem;  
 }
+
 a{
     color: var(--acento);
 }
@@ -52,6 +57,7 @@ a{
 li {
     list-style: none;
 }
+
 img {
     max-width: 12.5rem;
 }
@@ -64,6 +70,7 @@ img {
     width: 100%;
     height: 100vh;
 }
+
 @media (min-width: 1200px) {
     .layout {
         display: grid;
@@ -100,23 +107,24 @@ header {
         align-items: center;
         justify-content: center;
     }
-.navegador { 
-    grid-row: 2/3;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: .5rem;
-    padding: .5rem .5rem 1rem .5rem;  
+    .navegador { 
+        grid-row: 2/3;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: .5rem;
+        padding: .5rem .5rem 1rem .5rem;  
+}
 }
 
-}
 @media (min-width: 768px) {
     .navegador {
         justify-content: space-around;
     }
 }
+
 .navegador-redes {
     grid-row: 3/4;
     display: flex;
@@ -124,6 +132,7 @@ header {
     align-items: center;
     gap: 2rem;
 }
+
 @media (min-width: 1200px) {
     .navegador-redes{
         grid-row: 1/2;
@@ -132,6 +141,7 @@ header {
 
     }
 }
+
 .hero {
     grid-row: 2/3;
     background-image: url(../assets/img/wormies-foto-hoveredit.svg);
@@ -151,6 +161,7 @@ header {
     flex-direction: column;
     
 }
+
 @media (min-width: 768px) {
     .contenedor-contenido-index {
         display: grid;
@@ -158,7 +169,6 @@ header {
         grid-template-rows: 4rem 1fr;
     }
 }
-
 
 /* Logo */
 
@@ -255,6 +265,8 @@ footer p {
     color: var(--primario);
     font-family: var(--fuente-principal);
     font-size: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -308,6 +320,7 @@ footer p {
         min-width: 20rem;
     }
 }
+
 @media (min-width: 1200px) {
     .contenedor-nosotros {
         display: grid;
@@ -352,13 +365,9 @@ footer p {
     }
     .contenedor-fotos-nosotros img {
         min-width: 31.25rem;
-        margin: 1rem 2rem;
-
-
-        
+        margin: 1rem 2rem;    
     }
 }
-
 
 /* Galeria */
 
@@ -381,4 +390,83 @@ footer p {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 2rem;
+}
+
+/*Fechas*/
+
+table { 
+    color: var(--secundario);
+    font-size: 1.3125rem;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: var(--acento);
+    text-transform: uppercase;
+}
+
+th {
+    padding: 1.25rem .9375rem;
+    font-weight: 700;
+}
+
+tbody tr {
+    padding: .9375rem;
+    border-bottom: .125rem solid var(--acento);
+}
+
+.contenedor-fechas {
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+}
+.contenedor-fechas table {
+    grid-column: 2/3;
+}
+
+/* Contacto / Formulario */
+
+form fieldset{
+    width: 75rem;
+    /* background-color: #e7e0e0a8; */
+    border: none;
+}
+
+form input {
+    border: none;
+    background-color: transparent;
+    width: 62.5rem;
+    margin: 1rem 1rem;
+    font-size: 1.5rem;
+    font-family: var(--fuente-principal);
+    border-bottom: .25rem solid var(--secundario);
+}
+
+form textarea {
+    width: 62.5rem;
+    margin: 1rem 1rem;
+    border: none;
+    border-bottom: .25rem solid var(--secundario);
+    font-family: var(--fuente-principal);
+    font-size: 1.5rem;
+
+}
+
+.boton-form {
+    color: var(--secundario);
+    background-color: var(--acento);
+    font-size: 2rem;
+    font-family: var(--fuente-principal);  
+    margin: 1rem 1rem;
+    border: none;    
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    background-color: var(--grey);
+}
+
+.formulario form {
+    grid-column: 2/3;
 }
