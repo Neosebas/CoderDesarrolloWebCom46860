@@ -391,6 +391,9 @@ footer p {
     justify-content: space-evenly;
     margin-bottom: 2rem;
 }
+.flecha-carrusel {
+    color: var(--acento);
+}
 
 /*Fechas*/
 
