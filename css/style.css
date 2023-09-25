@@ -358,3 +358,27 @@ footer p {
         
     }
 }
+
+
+/* Galeria */
+
+.img-carrusel {
+    max-width: 31.25rem;
+    margin-left: 25rem;
+}
+
+.h2-galeria {
+    text-align: center;
+    margin: 2rem;
+    padding-top: 1rem;
+    border-top: .25rem solid var(--acento);
+}
+.galeria {
+    width: 28.125rem;
+    height: 28.125rem;
+}
+.galeria-videos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
