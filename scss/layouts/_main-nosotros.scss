@@ -1,0 +1,70 @@
+main {
+    grid-row: 3/4;
+
+    .contenedor-main {
+        width: 95%;
+        place-content: center;
+        display: flex;
+        flex-direction: column;
+    
+        .contenedor-nosotros {
+            @extend .contenedor-main;
+            margin-bottom: 2rem;
+        
+            h2 { 
+            text-align: center;
+
+            }
+            h3 {
+                text-align: center;
+                @include sombra-h(.0625rem, $grey)
+            }
+            p {
+                font-size: 1rem;
+                font-weight: bold;
+                padding: 1rem 2rem;
+            }
+            .img-nosotros {
+                place-self: center;
+                @include sombra(3px)
+            }
+        }
+
+        .contenedor-nosotros-2 {
+                @extend .contenedor-main;
+                .img-nosotros{
+                    place-self: center;
+                    @include sombra(3px)
+                    
+                }
+                p {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    padding: 1rem 2rem;
+                }
+        }
+
+        .contenedor-nosotros-3 {
+            h3 {
+                @include sombra-h(.0625rem, $grey)
+            }
+            .cronologia {
+                display: flex;
+                flex-direction: column;
+                padding: 1rem 1rem;
+                gap: 1rem;
+
+                li {
+                    border-bottom: 3px solid $acento;
+                }
+            }
+        }
+
+        .contenedor-fotos-nosotros {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            gap: .5rem;
+        }
+    }
+}

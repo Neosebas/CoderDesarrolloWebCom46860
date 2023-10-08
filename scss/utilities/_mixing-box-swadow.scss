@@ -1,0 +1,7 @@
+@mixin sombra($eje){
+    filter: drop-shadow($eje $eje ($eje*2) $acento)
+}
+
+@mixin sombra-h($eje, $color){
+filter: drop-shadow($eje $eje ($eje*2) $color)
+}

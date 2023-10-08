@@ -1,0 +1,15 @@
+.hero {
+    grid-row: 2/3;
+    width: 100%;
+    background-image: url(../assets/img/wormies-foto-hoveredit.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h1 {
+        text-align: center;
+        text-justify: center;
+        margin-top: 1rem;
+        @include sombra(2px)
+    }
+}

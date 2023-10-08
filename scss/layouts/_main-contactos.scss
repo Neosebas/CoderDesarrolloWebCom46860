@@ -1,0 +1,47 @@
+main {
+    grid-row: 3/4;
+
+        .formulario {
+            display: grid;
+            width: 95%;
+            grid-template-columns: 5% 1fr 5%;
+
+                form {
+                    grid-column: 2/3;
+
+                        fieldset {
+                            min-width: 24.375rem; 
+                            border: none;
+
+                                input {
+                                    border: none;
+                                    background-color: transparent;
+                                    width: 80%;
+                                    margin: 1rem 1rem;
+                                    font-size: 1.5rem;
+                                    font-family: $fuente-principal;
+                                    border-bottom: .25rem solid $grey;
+                                }
+
+                                textarea {
+                                    width: 80%;
+                                    margin: 1rem 1rem;
+                                    border: none;
+                                    border-bottom: .25rem solid $grey;
+                                    font-family: $fuente-principal;
+                                    font-size: 1.5rem;
+                                }
+
+                                .boton-form {
+                                    color: $secundario;
+                                    background-color: $acento;
+                                    font-size: 2rem;
+                                    font-family: $fuente-principal;  
+                                    margin: 1rem 1rem;
+                                    border: none; 
+                                }
+
+                        }
+                }
+        }
+}

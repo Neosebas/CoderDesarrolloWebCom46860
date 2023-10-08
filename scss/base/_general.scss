@@ -1,0 +1,42 @@
+h1{
+    font-family: $fuente-heading;
+    font-size: 4rem;
+    color: $secundario;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+h2{
+    @extend h1;
+    font-size: 2.5625rem;
+
+}
+
+h3 {
+    @extend h1;
+    color: $acento;
+    font-size:  1.5625rem;
+
+}
+
+p {
+    font-family: $fuente-principal;
+    font-size: 1.3125rem;
+    color: $secundario;
+    line-height: 2rem; 
+    padding: 1rem 1rem; 
+}
+
+a{
+    color: $acento;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 12.5rem;
+}

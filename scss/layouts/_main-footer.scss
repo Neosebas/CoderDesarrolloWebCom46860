@@ -1,0 +1,14 @@
+footer {
+    grid-row: 4/5;
+    background-color: $secundario;
+    text-align: center;
+    text-justify: center;
+
+    p {
+        color: $primario;
+        font-family: $fuente-principal;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+}

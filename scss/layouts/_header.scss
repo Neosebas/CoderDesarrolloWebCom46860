@@ -1,0 +1,51 @@
+header {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 50% 25% 25%;
+    background-color: $secundario;
+    align-items: center;
+
+    .logo {
+        grid-row: 1/2;
+        width: 100%;
+        height: auto;
+        place-self: center;
+    }
+    nav {
+        .navegador {
+            grid-row: 2/3;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            gap: .5rem;
+        
+        li {
+            a {
+                text-decoration: none;
+                color: $primario;
+                font-size: .875rem;
+                &:hover {
+                    color: $acento;
+                }
+            }
+        }    
+
+        }
+        }    
+        .navegador-redes {
+            @extend .navegador;
+            grid-row: 3/4;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 2rem;
+            
+            li{ 
+                .redes {
+                    width: 2rem;
+                }
+            }
+
+
+        }
+}
