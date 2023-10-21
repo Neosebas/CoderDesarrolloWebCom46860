@@ -357,7 +357,6 @@ img {
   grid-template-rows: 20% 15% 1fr 5%;
   width: 100%;
   height: 100vh;
-  overflow-x: hidden;
 }
 
 header {
@@ -452,11 +451,12 @@ footer p {
 main {
   grid-row: 3/4;
 }
-main .contenedor-main, main .contenedor-main .contenedor-nosotros-2, main .contenedor-main .contenedor-nosotros {
+main .contenedor-main, main .contenedor-main .contenedor-fotos-nosotros, main .contenedor-main .contenedor-nosotros-3, main .contenedor-main .contenedor-nosotros-2, main .contenedor-main .contenedor-nosotros {
   width: 95%;
   place-content: center;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 main .contenedor-main .contenedor-nosotros {
   margin-bottom: 2rem;
@@ -499,10 +499,10 @@ main .contenedor-main .contenedor-nosotros-3 .cronologia li {
   border-bottom: 3px solid #fca600;
 }
 main .contenedor-main .contenedor-fotos-nosotros {
-  display: flex;
-  justify-content: center;
+  align-items: center;
   margin-bottom: 2rem;
   gap: 0.5rem;
+  overflow: hidden;
 }
 
 main {
@@ -510,7 +510,6 @@ main {
 }
 main .contenedor-main .h2-galeria {
   text-align: center;
-  margin: 2rem;
   padding-top: 1rem;
   border-top: 0.25rem solid var(--acento);
 }
@@ -536,11 +535,11 @@ main .contenedor-main .slider img {
 main .contenedor-main .galeria-videos {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 1rem;
 }
 main .contenedor-main .galeria-videos .contenedor-videos {
   max-width: 95%;
+  overflow: hidden;
 }
 main .contenedor-main .galeria-videos .contenedor-videos iframe {
   max-width: 21.875rem;
@@ -586,6 +585,7 @@ main .formulario {
   display: grid;
   width: 95%;
   grid-template-columns: 5% 1fr 5%;
+  overflow: hidden;
 }
 main .formulario form {
   grid-column: 2/3;
@@ -649,7 +649,7 @@ main .formulario form fieldset .boton-form {
   .layout main .contenedor-video {
     margin-left: 13rem;
   }
-  .layout main .contenedor-main, .layout main .contenedor-main .contenedor-nosotros, .layout main .contenedor-main .contenedor-nosotros-2 {
+  .layout main .contenedor-main, .layout main .contenedor-main .contenedor-nosotros, .layout main .contenedor-main .contenedor-nosotros-2, .layout main .contenedor-main .contenedor-nosotros-3, .layout main .contenedor-main .contenedor-fotos-nosotros {
     width: 100%;
   }
   .layout main .contenedor-main .contenedor-nosotros .img-nosotros {
@@ -659,14 +659,11 @@ main .formulario form fieldset .boton-form {
     max-width: 25rem;
   }
   .layout main .contenedor-main .contenedor-fotos-nosotros {
-    display: flex;
+    flex-direction: row;
     justify-content: space-around;
   }
   .layout main .contenedor-main .contenedor-fotos-nosotros img {
     max-width: 20rem;
-  }
-  .layout main .contenedor-main .slider {
-    margin-left: 16rem;
   }
   .layout main .contenedor-main .galeria-videos {
     display: flex;
@@ -745,7 +742,7 @@ main .formulario form fieldset .boton-form {
   .layout main .contenedor-video iframe {
     min-width: 43.75rem;
   }
-  .layout main .contenedor-main, .layout main .contenedor-main .contenedor-nosotros, .layout main .contenedor-main .contenedor-nosotros-2 {
+  .layout main .contenedor-main, .layout main .contenedor-main .contenedor-nosotros, .layout main .contenedor-main .contenedor-nosotros-2, .layout main .contenedor-main .contenedor-nosotros-3, .layout main .contenedor-main .contenedor-fotos-nosotros {
     width: 100%;
   }
   .layout main .contenedor-main .contenedor-nosotros {

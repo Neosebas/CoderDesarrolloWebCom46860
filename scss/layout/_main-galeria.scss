@@ -5,7 +5,6 @@ main {
 
         .h2-galeria{
             text-align: center;
-            margin: 2rem;
             padding-top: 1rem;
             border-top: .25rem solid var(--acento);
         }
@@ -33,11 +32,11 @@ main {
         .galeria-videos {
             display: flex;
             flex-direction: column;
-            align-items: center;
             margin-bottom: 1rem;
 
                 .contenedor-videos {
                     max-width: 95%;
+                    overflow: hidden;
                     
                     iframe {
                         max-width: 21.875rem;

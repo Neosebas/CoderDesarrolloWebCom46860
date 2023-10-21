@@ -6,6 +6,7 @@ main {
         place-content: center;
         display: flex;
         flex-direction: column;
+        margin: 0   auto;
     
         .contenedor-nosotros {
             @extend .contenedor-main;
@@ -45,6 +46,7 @@ main {
         }
 
         .contenedor-nosotros-3 {
+            @extend.contenedor-main;
             h3 {
                 @include sombra-h(.0625rem, $grey)
             }
@@ -61,10 +63,12 @@ main {
         }
 
         .contenedor-fotos-nosotros {
-            display: flex;
-            justify-content: center;
+            @extend.contenedor-main;
+            align-items: center;
             margin-bottom: 2rem;
             gap: .5rem;
+            overflow: hidden;
         }
+
     }
 }

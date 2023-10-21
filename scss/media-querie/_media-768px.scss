@@ -58,7 +58,7 @@
             }
             .contenedor-main {
                 .contenedor-fotos-nosotros {
-                    display: flex;
+                    flex-direction: row;
                     justify-content: space-around;
 
                     img {
@@ -68,9 +68,6 @@
             }
             // Galeria
             .contenedor-main {
-                .slider{
-                    margin-left: 16rem;
-                }
                 .galeria-videos {
                     display: flex;
                     flex-direction: row;
