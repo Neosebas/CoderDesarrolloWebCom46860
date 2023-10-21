@@ -6,11 +6,12 @@ main {
         .h2-galeria{
             text-align: center;
             padding-top: 1rem;
-            border-top: .25rem solid var(--acento);
         }
         .contenedor-carrusel {
             width: 80%;
             align-self: center;
+            padding-bottom: 3rem;
+            border-bottom: .25rem solid $acento;
         }
 
         .galeria-videos {
