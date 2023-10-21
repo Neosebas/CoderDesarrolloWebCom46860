@@ -379,6 +379,7 @@ header nav .navegador, header nav .navegador-redes {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  padding-inline-start: 0;
 }
 header nav .navegador li a, header nav .navegador-redes li a {
   text-decoration: none;
@@ -393,6 +394,7 @@ header .navegador-redes {
   display: flex;
   justify-content: space-evenly;
   gap: 2rem;
+  padding-inline-start: 0;
 }
 header .navegador-redes li .redes {
   width: 2rem;
@@ -418,6 +420,7 @@ main {
 }
 main .contenedor-contenido-index h2 {
   text-align: center;
+  filter: drop-shadow(2px 2px 4px #fca600);
 }
 main .contenedor-contenido-index p {
   font-size: 1rem;
@@ -513,24 +516,9 @@ main .contenedor-main .h2-galeria {
   padding-top: 1rem;
   border-top: 0.25rem solid var(--acento);
 }
-main .contenedor-main .slider {
-  aspect-ratio: 10/16;
-  width: 18.75rem;
-  max-width: 80%;
-  position: relative;
-  display: flex;
-  overflow: scroll;
-  scroll-snap-type: x mandatory;
-  margin-left: 3rem;
-}
-main .contenedor-main .slider img {
-  width: 100%;
-  max-width: 100%;
-  left: 0;
-  position: sticky;
-  object-fit: cover;
-  border-radius: 0.3125rem;
-  scroll-snap-align: center;
+main .contenedor-main .contenedor-carrusel {
+  width: 80%;
+  align-self: center;
 }
 main .contenedor-main .galeria-videos {
   display: flex;

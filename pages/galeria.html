@@ -47,70 +47,62 @@
         <main>
             <section class="contenedor-main">
                 <h2 class="h2-galeria">fotos</h2>
-                <!-- <div class="slider">
-                    <img src="../assets/img/foto-banda-remeras.webp" alt="foto-banda-remeras">
-                    <img src="../assets/img/foto-banda-vista-abajo.webp" alt="foto-banda-vista-abajo">
-                </div>  
-                <h2 class="h2-galeria">arte</h2>
-                <div class="slider">
-                    <img src="../assets/img/2.webp" alt="2">
-                    <img src="../assets/img/4-1.webp" alt="4.1">
-                    <img src="../assets/img/b-jai-definishion.webp" alt="b-jai-definishion">
-                    <img src="../assets/img/wormies.webp" alt="wormies">
-                </div> -->
-
-                <div id="carousel-fotos" class="carousel slide  ">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carousel-fotos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carousel-fotos" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carousel-fotos" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                        <img src="../assets/img/foto-banda-remeras.webp" class="d-block w-100 img-fluid " alt="foto-banda-remeras">
+                <div class="contenedor-carrusel">
+                    <div id="carousel-fotos" class="carousel slide  ">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-fotos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel-fotos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel-fotos" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
-                        <div class="carousel-item">
-                        <img src="../assets/img/foto-banda-vista-abajo.webp" class="d-block w-100 img-fluid " alt="foto-banda-vista-abajo">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="../assets/img/foto-banda-remeras.webp" class="d-block w-100 img-fluid " alt="foto-banda-remeras">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="../assets/img/foto-banda-vista-abajo.webp" class="d-block w-100 img-fluid " alt="foto-banda-vista-abajo">
+                            </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-fotos" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon text-bg-warning " aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-fotos" data-bs-slide="next">
+                            <span class="carousel-control-next-icon text-bg-warning " aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-fotos" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon text-bg-warning " aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-fotos" data-bs-slide="next">
-                        <span class="carousel-control-next-icon text-bg-warning " aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
                 <h2 class="h2-galeria">arte</h2>
-                <div id="carousel-arte" class="carousel slide mx-auto ">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carousel-arte" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carousel-arte" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carousel-arte" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <div class="contenedor-carrusel">
+                    <div id="carousel-arte" class="carousel slide mx-auto ">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-arte" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel-arte" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel-arte" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../assets/img/2.webp" class="d-block w-100 img-fluid" alt="2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/4-1.webp" class="d-block w-100 img-fluid" alt="4.1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/b-jai-definishion.webp" class="d-block w-100 img-fluid" alt="b-jai-definishion">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/wormies.webp" class="d-block w-100 img-fluid" alt="wormies">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-arte" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon text-bg-warning  " aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-arte" data-bs-slide="next">
+                            <span class="carousel-control-next-icon text-bg-warning  " aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../assets/img/2.webp" class="d-block w-100 img-fluid" alt="2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/img/4-1.webp" class="d-block w-100 img-fluid" alt="4.1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/img/b-jai-definishion.webp" class="d-block w-100 img-fluid" alt="b-jai-definishion">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/img/wormies.webp" class="d-block w-100 img-fluid" alt="wormies">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-arte" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon text-bg-warning  " aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-arte" data-bs-slide="next">
-                        <span class="carousel-control-next-icon text-bg-warning  " aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
                 <h2 class="h2-galeria">videos</h2>
                 <div class="galeria-videos">

@@ -8,25 +8,9 @@ main {
             padding-top: 1rem;
             border-top: .25rem solid var(--acento);
         }
-        .slider {
-            aspect-ratio: 10 / 16;
-            width: 18.75rem;
-            max-width: 80%;
-            position: relative;
-            display: flex;
-            overflow: scroll;
-            scroll-snap-type: x mandatory;
-            margin-left: 3rem;
-
-                img {
-                    width: 100%;
-                    max-width: 100%;
-                    left: 0;
-                    position: sticky;
-                    object-fit: cover;
-                    border-radius: .3125rem;
-                    scroll-snap-align: center;
-                }
+        .contenedor-carrusel {
+            width: 80%;
+            align-self: center;
         }
 
         .galeria-videos {
